@@ -1,0 +1,14 @@
+size(400,400);
+color fondo = color(random(255),random(255),random(255));
+color relleno = color(random(255),random(255),random(255));
+int x = round(random(100,300));
+int y = round(random(100,300));
+int w = round(random(10,100));
+int h = round(random(10,100));
+background(fondo);
+stroke(relleno);
+noFill();
+ellipse(x,y,w,h);
+ellipse(x,y,w*2,h*2);
+ellipse(x,y,w*3,h*3);
+ellipse(x,y,w*4,h*4);
