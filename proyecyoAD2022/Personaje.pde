@@ -39,7 +39,14 @@ class Personaje{
   }
   
   void colision(){
+     boolean colisiono = false;
     //Personaje + enemigo
+    float distancia = dist(this.x,this.y,e_.x,e_.y);
+    float sumaRadios = this.d/2 + e_.t/2;
+    if(distancia < sumaRadios){
+      colisiono = true;
+    }   
+    return colisiono;
   }
   
   void captura(){
