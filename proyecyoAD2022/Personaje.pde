@@ -38,7 +38,7 @@ class Personaje{
     ellipse(x,y,d,d);
   }
   
-  void colision(){
+  boolean colision(Enemigo e_){
      boolean colisiono = false;
     //Personaje + enemigo
     float distancia = dist(this.x,this.y,e_.x,e_.y);
