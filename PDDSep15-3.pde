@@ -12,7 +12,7 @@ class Epi{
     for(int i = 0; i<n; i++){
       t[i] = random(min_, max_);
       a[i] = random(TWO_PI);
-      da[i] = random(-0.05,0.05);
+      da[i] = random(-0.1,0.1);
     }
     
   }
